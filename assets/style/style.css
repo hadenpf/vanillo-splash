@@ -1,0 +1,164 @@
+:root {
+    --v-white: #fff;
+    --v-light-creme: #fbf2ea;
+    --v-darker-creme: #f6c497;
+    --v-gold: #eb9e5b;
+    --v-dark: #212121;
+    --header-height: 5rem;
+    font-family: VWGilroy, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--v-light-creme);
+    color: var(--v-dark);
+}
+
+.content {
+    padding-top: var(--header-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--v-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img.nav-logo {
+    height: calc(var(--header-height) - 2.25rem);
+    margin-right: .15rem;
+}
+
+nav .links {
+    --link-spacing: 1rem;
+    display: flex;
+}
+
+nav .links a {}
+
+nav .links a {
+    padding-left: var(--link-spacing);
+    margin-left: var(--link-spacing);
+    border-left: 1px solid var(--v-darker-creme);
+}
+
+header {
+    text-align: center;
+}
+
+header.hero {
+    background-color: var(--v-gold);
+    color: var(--v-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+}
+
+header img.big-logo {
+    max-height: 5rem;
+}
+
+.brand {
+    font-size: 3rem;
+    display: flex;
+}
+
+.brand .logo-inline {
+    height: 1em;
+    margin-right: .2em;
+    padding-top: .05em;
+    display: inline-block;
+}
+
+.wordmark {
+    font-weight: 800;
+}
+
+.identificator {
+    font-size: 3rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    line-height: .9;
+}
+
+.identificator span:first-child {
+    font-weight: 900;
+}
+
+section {
+    margin: 5rem;
+}
+
+section.centered {
+    text-align: center;
+}
+
+section.centered p {
+    text-align: left;
+}
+
+section>div {
+    margin: auto;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+section>div>h2 {
+    box-shadow: inset 0 -6px 0 0 var(--v-darker-creme);
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.cta {
+    margin-top: 1rem;
+}
+
+button, a.button {
+    appearance: none;
+    border: none;
+    font: inherit;
+    display: inline-block;
+    background-color: var(--v-darker-creme);
+    color: var(--v-dark);
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+}
+
+button[disabled], a.button.disabled, a.button[disabled] {
+    opacity: .9;
+    cursor: not-allowed !important;
+    background-color: var(--v-darker-creme) !important;
+    color: var(--v-dark) !important;
+}
+
+button:hover, a.button:hover {
+    background-color: var(--v-light-creme);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:active, a.button:active {
+    background-color: var(--v-darker-creme);
+}
+
+button:focus, a.button:focus {
+    background-color: var(--v-light-creme);
+}
