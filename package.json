@@ -1,0 +1,12 @@
+{
+  "name": "rebrand-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hadenpf/vanillo-splash.git",
+  "author": "Haden <haden@hadenfletcher.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "netlify": "^2.4.8",
+    "netlify-cli": "^2.17.0"
+  }
+}
